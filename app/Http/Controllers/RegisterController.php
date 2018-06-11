@@ -43,8 +43,9 @@ class RegisterController extends Controller
          'country' => 'required|string',
        ]);
 
-       if(strlen($request->zip) != 5||strlen($request->zip) != 9)
+       if(!in_array(strlen($request->zip),[5,9]))
        {
+
           return back()->with('warning','Zip code should be 5 or 9 digits');
         }
 
