@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Hello World</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="{{ asset("http://www.hello.local.com/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+  <link rel="stylesheet" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  <!-- Ionicons -->
 <link rel="stylesheet" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/bower_components/Ionicons/css/ionicons.min.css">
